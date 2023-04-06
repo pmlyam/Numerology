@@ -1,14 +1,6 @@
-from dataclasses import dataclass
 from datetime import datetime
 
-
-class dict_as_obj(dict):
-
-    def __getattr__(self, name):
-        return self.get(name)
-
-    def __setattr__(self, name, value):
-        self[name] = value
+from .models import PsychomatrixBaseContent, PsychomatrixAdditionalContent
 
 
 class Calculator:
@@ -84,6 +76,24 @@ class Calculator:
         return self.get_numbers() + self.get_additional_numbers()
 
 
+def get_contents(numbers: list) -> tuple[list, list]:
+    basic_codes = [
+        f'{enum}-нет' if num == '-' else num for enum, num in
+        enumerate(numbers[:9], start=1)
+    ]
+    additional_codes = [
+        f'{enum}-0' if num == '-' else f'{enum}-{num}'
+        for enum, num in
+        enumerate(numbers[9:], start=1)
+    ]
+    basic = PsychomatrixBaseContent.objects.filter(
+        code__in=basic_codes
+    )
+    additional = PsychomatrixAdditionalContent.objects.filter(
+        code__in=additional_codes
+    )
+    return basic, additional
+
 class CalculatorMatrix:
     class Points:
         __slots__ = (
@@ -122,7 +132,7 @@ class CalculatorMatrix:
         """
         return [self.date.day, self.date.month, self.date.year]
 
-    def add_points_first_group(self):
+    def __add_points_first_group(self):
         """
         points a, b, c, d, e
         """
@@ -133,7 +143,7 @@ class CalculatorMatrix:
         self.points.d = tuple(self.points.to_dict().values())
         self.points.e = tuple(self.points.to_dict().values())
 
-    def add_points_second_group(self):
+    def __add_points_second_group(self):
         """
         points f, g, y, k
         """
@@ -142,7 +152,7 @@ class CalculatorMatrix:
         self.points.y = (self.points.c, self.points.d)
         self.points.k = (self.points.a, self.points.d)
 
-    def add_points_third_group(self):
+    def __add_points_third_group(self):
         """
         points a1, a2, d1, d2
         """
@@ -151,7 +161,7 @@ class CalculatorMatrix:
         self.points.d1 = (self.points.d, self.points.e)
         self.points.d2 = (self.points.d, self.points.d1)
 
-    def add_points_fourth_group(self):
+    def __add_points_fourth_group(self):
         """
         points h, j, m, n, t, z, s
         """
@@ -163,7 +173,7 @@ class CalculatorMatrix:
         self.points.z = (self.points.n, self.points.t)
         self.points.s = (self.points.m, self.points.z)
 
-    def add_points_fifth_group(self):
+    def __add_points_fifth_group(self):
         """
         points c1, x, x1, x2, c2
         """
@@ -173,7 +183,7 @@ class CalculatorMatrix:
         self.points.x1 = (self.points.d1, self.points.x)
         self.points.c2 = (self.points.c, self.points.c1)
 
-    def add_points_sixth_group(self):
+    def __add_points_sixth_group(self):
         """
         points e1, e2, p1, p2, s1, s2
         """
@@ -184,7 +194,7 @@ class CalculatorMatrix:
         self.points.s1 = (self.points.f, self.points.e1)
         self.points.s2 = (self.points.f, self.points.s1)
 
-    def add_points_seventh_group(self):
+    def __add_points_seventh_group(self):
         """
         points l, b1, b2, b3, l1, l2, l3, l4, l5, l6, a3
         """
@@ -201,17 +211,11 @@ class CalculatorMatrix:
         self.points.a3 = (self.points.a1, self.points.e)
 
     def get_matrix_points(self):
-        self.add_points_first_group()
-        self.add_points_second_group()
-        self.add_points_third_group()
-        self.add_points_fourth_group()
-        self.add_points_fifth_group()
-        self.add_points_sixth_group()
-        self.add_points_seventh_group()
+        self.__add_points_first_group()
+        self.__add_points_second_group()
+        self.__add_points_third_group()
+        self.__add_points_fourth_group()
+        self.__add_points_fifth_group()
+        self.__add_points_sixth_group()
+        self.__add_points_seventh_group()
         return self.points
-
-
-date = datetime(1986, 11, 21)
-
-calculator = CalculatorMatrix(date)
-print(calculator.get_matrix_points())
