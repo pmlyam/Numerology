@@ -1,0 +1,46 @@
+.preloader {
+  background: #202020;
+  width: 100%;
+}
+
+.preloader__section {
+  width: 100%;
+  padding: 50px 0 80px;
+  max-width: 1280px;
+  margin: 0 auto;
+}
+
+.preloader__loading {
+  width: 100%;
+  margin: 0 auto;
+}
+
+.loader {
+  width: 48px;
+  height: 48px;
+  border: 5px solid #fff;
+  border-bottom-color: transparent;
+  border-radius: 50%;
+  display: inline-block;
+  box-sizing: border-box;
+  -webkit-animation: rotation 1s linear infinite;
+  animation: rotation 1s linear infinite;
+}
+
+@-webkit-keyframes rotation {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+@keyframes rotation {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}

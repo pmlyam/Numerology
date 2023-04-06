@@ -1,0 +1,105 @@
+@font-face {
+  font-family: "Piazzolla";
+  font-style: normal;
+  font-weight: 300;
+  font-display: swap;
+  src: url("Piazzolla-Light.ttf") format("ttf");
+}
+
+@font-face {
+  font-family: "Piazzolla";
+  font-style: italic;
+  font-weight: 300;
+  font-display: swap;
+  src: url("Piazzolla-LightItalic.ttf") format("ttf");
+}
+
+@font-face {
+  font-family: "Piazzolla";
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url("Piazzolla-Regular.ttf") format("ttf");
+}
+
+@font-face {
+  font-family: "Piazzolla";
+  font-style: italic;
+  font-weight: 400;
+  font-display: swap;
+  src: url("Piazzolla-Italic.ttf") format("ttf");
+}
+
+@font-face {
+  font-family: "Piazzolla";
+  font-style: normal;
+  font-weight: 500;
+  font-display: swap;
+  src: url("Piazzolla-Medium.ttf") format("ttf");
+}
+@font-face {
+  font-family: "Piazzolla";
+  font-style: italic;
+  font-weight: 500;
+  font-display: swap;
+  src: url("Piazzolla-MediumItalic.ttf") format("ttf");
+}
+
+@font-face {
+  font-family: "Piazzolla";
+  font-style: normal;
+  font-weight: 600;
+  font-display: swap;
+  src: url("Piazzolla-SemiBold.ttf") format("ttf");
+}
+@font-face {
+  font-family: "Piazzolla";
+  font-style: italic;
+  font-weight: 600;
+  font-display: swap;
+  src: url("Piazzolla-SemiBoldItalic.ttf") format("ttf");
+}
+
+@font-face {
+  font-family: "Piazzolla";
+  font-style: normal;
+  font-weight: 700;
+  font-display: swap;
+  src: url("Piazzolla-Bold.ttf") format("ttf");
+}
+@font-face {
+  font-family: "Piazzolla";
+  font-style: italic;
+  font-weight: 700;
+  font-display: swap;
+  src: url("Piazzolla-BoldItalic.ttf") format("ttf");
+}
+
+@font-face {
+  font-family: "Piazzolla";
+  font-style: normal;
+  font-weight: 800;
+  font-display: swap;
+  src: url("Piazzolla-ExtraBold.ttf") format("ttf");
+}
+@font-face {
+  font-family: "Piazzolla";
+  font-style: italic;
+  font-weight: 800;
+  font-display: swap;
+  src: url("Piazzolla-ExtraBoldItalic.ttf") format("ttf");
+}
+@font-face {
+  font-family: "Piazzolla";
+  font-style: normal;
+  font-weight: 900;
+  font-display: swap;
+  src: url("Piazzolla-Black.ttf") format("ttf");
+}
+@font-face {
+  font-family: "Piazzolla";
+  font-style: italic;
+  font-weight: 900;
+  font-display: swap;
+  src: url("Piazzolla-BlackItalic.ttf") format("ttf");
+}
