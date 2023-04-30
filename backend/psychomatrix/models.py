@@ -40,7 +40,7 @@ class PsychomatrixBaseContent(models.Model):
     )
 
     def __str__(self):
-        return self.title
+        return f"{self.title} - {self.code}"
 
     class Meta:
         db_table = 'psychomatrix_basic_contents'
@@ -107,5 +107,6 @@ class PsychomatrixAdditionalCelebrity(models.Model):
         Celebrity, on_delete=models.CASCADE,
         related_name='psychomatrixadditional_in_celebrity'
     )
+
     class Meta:
         db_table = 'psychomatrix_additional_celebrity'

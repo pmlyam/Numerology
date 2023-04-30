@@ -19,11 +19,14 @@ class SquareOfPythagorasView(APIView):
         calculator = Calculator(data['date'])
         numbers = calculator.get_all_numbers()
         basic, addition = get_contents(numbers)
+
+        basic_data = PsychomatrixBaseSerializer(basic, many=True).data
+        addition_data = PsychomatrixAdditionalSerializer(addition, many=True).data
         return Response(
             {
                 'mainInfo': [
-                    {'basic': PsychomatrixBaseSerializer(basic, many=True).data},
-                    {'addition': PsychomatrixAdditionalSerializer(basic, many=True).data},
+                    {'basic': basic_data},
+                    {'addition': addition_data},
                 ]
             },
             status=status.HTTP_200_OK

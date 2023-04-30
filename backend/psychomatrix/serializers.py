@@ -7,17 +7,15 @@ from .models import PsychomatrixBaseContent, PsychomatrixAdditionalContent, Cele
 
 
 class CelebritySerializer(serializers.ModelSerializer):
-
     photo = Base64ImageField()
 
     class Meta:
         model = Celebrity
-        read_only_fields = ('__all__', )
-        exclude = ('id', )
+        read_only_fields = ('__all__',)
+        exclude = ('id',)
 
 
 class PsychomatrixBaseSerializer(serializers.ModelSerializer):
-
     name = serializers.CharField(source='title')
     number = serializers.CharField(source='code')
     description = serializers.CharField(source='text')
@@ -28,16 +26,25 @@ class PsychomatrixBaseSerializer(serializers.ModelSerializer):
         fields = ('name', 'number', 'description', 'celebrities')
         read_only_fields = ('name', 'number', 'description', 'celebrities')
 
+    def to_representation(self, instance):
+        res = super().to_representation(instance)
+        if "нет" in res.get("number"):
+            res["number"] = ""
+        return res
+
 
 class PsychomatrixAdditionalSerializer(serializers.ModelSerializer):
     name = serializers.CharField(source='title')
-    number = serializers.CharField(source='code')
+    number = serializers.CharField(source='level')
     description = serializers.CharField(source='text')
 
     class Meta:
         model = PsychomatrixAdditionalContent
         fields = ('name', 'number', 'description')
         read_only_fields = ('name', 'number', 'description')
+        ordering = ('number',)
+
+
 
 
 class DateSerializer(serializers.Serializer):
