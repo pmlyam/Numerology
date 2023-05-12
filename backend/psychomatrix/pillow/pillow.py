@@ -30,7 +30,8 @@
 #     @staticmethod
 #     def _paste_numbers(draw: ImageDraw, numbers: list[str]) -> bool:
 #         draw_options = {
-#             'font': ImageFont.truetype(config.FONT, size=config.FONT_SIZE_NUM),
+#             'font': ImageFont.truetype(config.FONT,
+#             size=config.FONT_SIZE_NUM),
 #             'fill': config.FILL_NUM,
 #             'anchor': config.ANCHOR
 #         }

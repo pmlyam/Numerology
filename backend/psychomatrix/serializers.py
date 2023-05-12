@@ -3,7 +3,9 @@ from datetime import datetime
 from drf_extra_fields.fields import Base64ImageField
 from rest_framework import serializers
 
-from .models import PsychomatrixBaseContent, PsychomatrixAdditionalContent, Celebrity
+from .models import (PsychomatrixBaseContent,
+                     PsychomatrixAdditionalContent,
+                     Celebrity)
 
 
 class CelebritySerializer(serializers.ModelSerializer):
@@ -45,8 +47,6 @@ class PsychomatrixAdditionalSerializer(serializers.ModelSerializer):
         ordering = ('number',)
 
 
-
-
 class DateSerializer(serializers.Serializer):
     date = serializers.DateField()
 
@@ -55,5 +55,7 @@ class DateSerializer(serializers.Serializer):
         Проверка, что полученная дата меньше или равна текущей
         """
         if data['date'] > datetime.now().date():
-            raise serializers.ValidationError('Запрашиваемая дата больше текущей')
+            raise serializers.ValidationError(
+                'Запрашиваемая дата больше текущей'
+            )
         return data

@@ -4,9 +4,10 @@ from rest_framework.response import Response
 from rest_framework.views import APIView
 
 from .calculators import Calculator, get_contents
-from .serializers import (
-    DateSerializer, PsychomatrixBaseSerializer, PsychomatrixAdditionalSerializer,
-)
+from .serializers import (DateSerializer,
+                          PsychomatrixBaseSerializer,
+                          PsychomatrixAdditionalSerializer,
+                          )
 
 
 class SquareOfPythagorasView(APIView):
@@ -21,7 +22,9 @@ class SquareOfPythagorasView(APIView):
         basic, addition = get_contents(numbers)
 
         basic_data = PsychomatrixBaseSerializer(basic, many=True).data
-        addition_data = PsychomatrixAdditionalSerializer(addition, many=True).data
+        addition_data = PsychomatrixAdditionalSerializer(
+            addition, many=True
+        ).data
         return Response(
             {
                 'mainInfo': [
