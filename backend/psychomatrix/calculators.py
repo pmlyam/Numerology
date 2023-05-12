@@ -1,6 +1,6 @@
 from datetime import datetime
 
-from .models import PsychomatrixBaseContent, PsychomatrixAdditionalContent
+from .models import PsychomatrixAdditionalContent, PsychomatrixBaseContent
 
 
 class Calculator:
@@ -45,12 +45,9 @@ class Calculator:
         :return: list; example ['1111', '-', '33', '4', '-', '66', '-', '88', '999']
         """
         numbers = str(self.__get_all_birth_numbers())
-        square_numbers = [
-            ''.join(
-                str(num) for _ in range(0, numbers.count(str(num)))
-            ) if str(num) in numbers else '-' for num in range(1, 10)
-        ]
-        return square_numbers
+        return [''.join(
+            str(num) for _ in range(0, numbers.count(str(num)))
+        ) if str(num) in numbers else '-' for num in range(1, 10)]
 
     def get_additional_numbers(self) -> list[str]:
         """
@@ -59,10 +56,10 @@ class Calculator:
         basic_numbers = self.get_numbers()
 
         def calculate(index: tuple):
-            num = len((basic_numbers[index[0]] +
-                       basic_numbers[index[1]] +
-                       basic_numbers[index[2]]
-                       ).replace('-', ''))
+            num = len(
+                (basic_numbers[index[0]] + basic_numbers[index[1]]
+                 + basic_numbers[index[2]]).replace('-', '')
+            )
             return str(num) if num > 0 else '-'
         return [calculate((0, 1, 2)), calculate((3, 4, 5)), calculate((6, 7, 8)),
                 calculate((2, 4, 6)), calculate((0, 3, 6)),
@@ -71,7 +68,8 @@ class Calculator:
     def get_all_numbers(self) -> list[str]:
         """
         :return: list; example
-        ['1111', '-', '33', '4', '-', '66', '-', '88', '999', '6', '3', '5', '2', '5', '2', '7', '7']
+        ['1111', '-', '33', '4', '-', '66', '-', '88', '999',
+        '6', '3', '5', '2', '5', '2', '7', '7']
         """
         return self.get_numbers() + self.get_additional_numbers()
 
@@ -93,6 +91,7 @@ def get_contents(numbers: list) -> tuple[list, list]:
         code__in=additional_codes
     )
     return basic, additional
+
 
 class CalculatorMatrix:
     class Points:

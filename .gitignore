@@ -131,4 +131,10 @@ dmypy.json
 .idea
 
 # Project files
-backend/backend_media/
+infra/
+backend_media/
+.github/workflows/action_secrets
+
+.DS_Store
+backend/.DS_Store
+backend/backend_static/.DS_Store

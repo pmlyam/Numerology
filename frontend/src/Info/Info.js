@@ -13,7 +13,7 @@ export function Info({ props }) {
       </div>
       <h2 className="info__heading">Дополнительные качества</h2>
       <div className="info__containers">
-        {props[1].map((item) => (
+        {props[1]?.map((item) => (
           <InfoItem props={item} key={item.name} />
         ))}
       </div>

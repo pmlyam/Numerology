@@ -1,5 +1,4 @@
-const BASE_URL = "https://alpetrovv123.pythonanywhere.com/api";
-// const BASE_URL = "http://localhost";
+const BASE_URL = "http://localhost/";
 
 const handleReturn = (res) => {
   if (res.ok) {
@@ -80,7 +79,7 @@ export const handleEditUserInfo = (user) => {
 
 // отправка даты рождения на сервер
 export const handleSendingBirthDate = (data) => {
-  return fetch(`${BASE_URL}/`, {
+  return fetch(`/api/`, {
     // mode: "no-cors", // временная заглушка CORS
     method: "POST",
     credentials: "include",

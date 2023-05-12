@@ -17,7 +17,7 @@ export function InfoItem({ props }) {
           <div className="info__item" key={item.name}>
             <img
               className="info__image"
-              src={`https://alpetrovv123.pythonanywhere.com${item.photo} `}
+              src={item.photo}
               alt={item.name}
             />
             <p className="info__name">{item.name}</p>
