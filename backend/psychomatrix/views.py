@@ -27,10 +27,8 @@ class SquareOfPythagorasView(APIView):
         ).data
         return Response(
             {
-                'mainInfo': [
-                    [basic_data],
-                    [addition_data],
-                ]
+                [basic_data],
+                [addition_data]
             },
             status=status.HTTP_200_OK
         )
