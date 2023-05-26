@@ -70,7 +70,7 @@ jobs:
           key: ${{ secrets.SSH_KEY }}
           script: |
             # Выполняет pull образа с DockerHub 
-            sudo docker pull ${{ secrets.DOCKER_IMAGE }}
+            sudo docker pull ${{ secrets.DOCKER_IMAGE }} 
             cd numerology/
             rm .env
             touch .env
