@@ -25,13 +25,17 @@ class PsychomatrixBaseSerializer(serializers.ModelSerializer):
 
     class Meta:
         model = PsychomatrixBaseContent
-        fields = ('name', 'number', 'description', 'celebrities')
-        read_only_fields = ('name', 'number', 'description', 'celebrities')
+        fields = ('name', 'number', 'description', 'celebrities', 'recommendation', 'advice')
+        read_only_fields = ('name', 'number', 'description', 'celebrities', 'recommendation', 'advice')
 
     def to_representation(self, instance):
         res = super().to_representation(instance)
         if "нет" in res.get("number"):
             res["number"] = ""
+        if res.get("recommendation") != "":
+            res["description"] += f'<b>Рекомендации:</b>\n{res["recommendation"]}'
+        if res.get("advice") != "":
+            res["description"] += f'<b>Советы:</b> \n{res["advice"]}'
         return res
 
 
