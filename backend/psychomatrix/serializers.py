@@ -37,10 +37,10 @@ class PsychomatrixBaseSerializer(serializers.ModelSerializer):
         if "нет" in res.get("number"):
             res["number"] = ""
         if res.get("recommendation") != "":
-            res["description"] += (f'<b>Рекомендации:</b>'
+            res["description"] += (f'\nРекомендации:'
                                    f'\n{res["recommendation"]}')
         if res.get("advice") != "":
-            res["description"] += (f'<b>Советы:</b>'
+            res["description"] += (f'\nСоветы:'
                                    f'\n{res["advice"]}')
         return res
 
