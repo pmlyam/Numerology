@@ -138,7 +138,7 @@ project_access
 
 .DS_Store
 backend/.DS_Store
-backend/backend_static/.DS_Store
+local_infra/backend_static/.DS_Store
 
 # trash
 numerology_old/

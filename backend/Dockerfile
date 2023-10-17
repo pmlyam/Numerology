@@ -9,8 +9,7 @@ COPY requirements.txt .
 
 RUN pip3 install -r requirements.txt --no-cache-dir
 
+RUN ls .
 COPY . /app
-COPY backend_media/ /app/backend_media
-COPY backend_static/ /app/backend_static
 
 CMD ["gunicorn", "app.wsgi:application", "--bind", "0.0.0.0:8000"]
