@@ -11,7 +11,6 @@ RUN pip3 install -r requirements.txt --no-cache-dir
 
 COPY . /app
 
-RUN ls
-RUN ls /app
+RUN ls /app/backend_static/data
 
 CMD ["gunicorn", "app.wsgi:application", "--bind", "0.0.0.0:8000"]
