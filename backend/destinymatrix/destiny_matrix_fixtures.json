@@ -1,0 +1,302 @@
+[
+    {
+        "model": "destinymatrix.destinymatrixcontent",
+        "pk": 1,
+        "fields": {
+            "title": "Визитная карточка",
+            "elements": "a",
+            "value": "ВСЕ ВОЗМОЖНЫЕ ЗНАЧЕНИЯ",
+            "meaning": "Расшифровка кода судьбы ВСЕ ВОЗМОЖНЫЕ ЗНАЧЕНИЯ в контексте \"Визитная катрочка\".",
+            "advice": "",
+            "recommendation": ""
+        }
+    },
+    {
+        "model": "destinymatrix.destinymatrixcontent",
+        "pk": 2,
+        "fields": {
+            "title": "Поддержка высших сил",
+            "elements": "b",
+            "value": "ВСЕ ВОЗМОЖНЫЕ ЗНАЧЕНИЯ",
+            "meaning": "Расшифровка кода судьбы ВСЕ ВОЗМОЖНЫЕ ЗНАЧЕНИЯ в контексте \"Поддержка высших сил\".",
+            "advice": "",
+            "recommendation": ""
+        }
+    },
+    {
+        "model": "destinymatrix.destinymatrixcontent",
+        "pk": 3,
+        "fields": {
+            "title": "Жизненный путь, главная проработка души",
+            "elements": "c",
+            "value": "ВСЕ ВОЗМОЖНЫЕ ЗНАЧЕНИЯ",
+            "meaning": "Расшифровка кода судьбы ВСЕ ВОЗМОЖНЫЕ ЗНАЧЕНИЯ в контексте \"Жизненный путь, главная проработка души\".",
+            "advice": "",
+            "recommendation": ""
+        }
+    },
+    {
+        "model": "destinymatrix.destinymatrixcontent",
+        "pk": 4,
+        "fields": {
+            "title": "Карма прошлого воплощения",
+            "elements": "d",
+            "value": "ВСЕ ВОЗМОЖНЫЕ ЗНАЧЕНИЯ",
+            "meaning": "Расшифровка кода судьбы ВСЕ ВОЗМОЖНЫЕ ЗНАЧЕНИЯ в контексте \"Карма прошлого воплощения\".",
+            "advice": "",
+            "recommendation": ""
+        }
+    },
+    {
+        "model": "destinymatrix.destinymatrixcontent",
+        "pk": 5,
+        "fields": {
+            "title": "Зона комфорта",
+            "elements": "e",
+            "value": "ВСЕ ВОЗМОЖНЫЕ ЗНАЧЕНИЯ",
+            "meaning": "Расшифровка кода судьбы ВСЕ ВОЗМОЖНЫЕ ЗНАЧЕНИЯ в контексте \"Зона комфорта\".",
+            "advice": "",
+            "recommendation": ""
+        }
+    },
+    {
+        "model": "destinymatrix.destinymatrixcontent",
+        "pk": 6,
+        "fields": {
+            "title": "Родовые программы",
+            "elements": "f-s2-s1",
+            "value": "ВСЕ ВОЗМОЖНЫЕ ЗНАЧЕНИЯ",
+            "meaning": "Расшифровка ВСЕ ВОЗМОЖНЫЕ ЗНАЧЕНИЯ в контексте \"Родовые программы\".",
+            "advice": "",
+            "recommendation": ""
+        }
+    },
+    {
+        "model": "destinymatrix.destinymatrixcontent",
+        "pk": 7,
+        "fields": {
+            "title": "Родовые программы",
+            "elements": "g-p2-p1",
+            "value": "ВСЕ ВОЗМОЖНЫЕ ЗНАЧЕНИЯ",
+            "meaning": "Расшифровка ВСЕ ВОЗМОЖНЫЕ ЗНАЧЕНИЯ в контексте \"Родовые программы\".",
+            "advice": "",
+            "recommendation": ""
+        }
+    },
+    {
+        "model": "destinymatrix.destinymatrixcontent",
+        "pk": 8,
+        "fields": {
+            "title": "Родовые программы",
+            "elements": "y-s3-s4",
+            "value": "ВСЕ ВОЗМОЖНЫЕ ЗНАЧЕНИЯ",
+            "meaning": "Расшифровка ВСЕ ВОЗМОЖНЫЕ ЗНАЧЕНИЯ в контексте \"Родовые программы\".",
+            "advice": "",
+            "recommendation": ""
+        }
+    },
+    {
+        "model": "destinymatrix.destinymatrixcontent",
+        "pk": 9,
+        "fields": {
+            "title": "Родовые программы",
+            "elements": "k-p4-p3",
+            "value": "ВСЕ ВОЗМОЖНЫЕ ЗНАЧЕНИЯ",
+            "meaning": "Расшифровка ВСЕ ВОЗМОЖНЫЕ ЗНАЧЕНИЯ в контексте \"Родовые программы\".",
+            "advice": "",
+            "recommendation": ""
+        }
+    },
+    {
+        "model": "destinymatrix.destinymatrixcontent",
+        "pk": 10,
+        "fields": {
+            "title": "Родовые программы (по мужской линии)",
+            "elements": "f-y-o",
+            "value": "ВСЕ ВОЗМОЖНЫЕ ЗНАЧЕНИЯ",
+            "meaning": "Расшифровка ВСЕ ВОЗМОЖНЫЕ ЗНАЧЕНИЯ в контексте \"Родовые программы\".",
+            "advice": "",
+            "recommendation": ""
+        }
+    },
+    {
+        "model": "destinymatrix.destinymatrixcontent",
+        "pk": 11,
+        "fields": {
+            "title": "Родовые программы (по женской линии)",
+            "elements": "g-k-y",
+            "value": "ВСЕ ВОЗМОЖНЫЕ ЗНАЧЕНИЯ",
+            "meaning": "Расшифровка ВСЕ ВОЗМОЖНЫЕ ЗНАЧЕНИЯ в контексте \"Родовые программы\".",
+            "advice": "",
+            "recommendation": ""
+        }
+    },
+    {
+        "model": "destinymatrix.destinymatrixcontent",
+        "pk": 12,
+        "fields": {
+            "title": "Детско-родительская карма",
+            "elements": "a-a2-a1",
+            "value": "ВСЕ ВОЗМОЖНЫЕ ЗНАЧЕНИЯ",
+            "meaning": "Расшифровка ВСЕ ВОЗМОЖНЫЕ ЗНАЧЕНИЯ в контексте \"Детско-родительская карма\".",
+            "advice": "",
+            "recommendation": ""
+        }
+    },
+    {
+        "model": "destinymatrix.destinymatrixcontent",
+        "pk": 13,
+        "fields": {
+            "title": "Карма прошлых жизней",
+            "elements": "d-d2-d1",
+            "value": "ВСЕ ВОЗМОЖНЫЕ ЗНАЧЕНИЯ",
+            "meaning": "Расшифровка ВСЕ ВОЗМОЖНЫЕ ЗНАЧЕНИЯ в контексте \"Карма прошлых жизней\".",
+            "advice": "",
+            "recommendation": ""
+        }
+    },
+    {
+        "model": "destinymatrix.destinymatrixcontent",
+        "pk": 14,
+        "fields": {
+            "title": "Деньги",
+            "elements": "x-x2-c1",
+            "value": "ВСЕ ВОЗМОЖНЫЕ ЗНАЧЕНИЯ",
+            "meaning": "Расшифровка ВСЕ ВОЗМОЖНЫЕ ЗНАЧЕНИЯ в контексте \"Деньги\".",
+            "advice": "",
+            "recommendation": ""
+        }
+    },
+    {
+        "model": "destinymatrix.destinymatrixcontent",
+        "pk": 15,
+        "fields": {
+            "title": "Деньги",
+            "elements": "x2",
+            "value": "ВСЕ ВОЗМОЖНЫЕ ЗНАЧЕНИЯ",
+            "meaning": "Расшифровка кода судьбы ВСЕ ВОЗМОЖНЫЕ ЗНАЧЕНИЯ в контексте \"Деньги\".",
+            "advice": "",
+            "recommendation": ""
+        }
+    },
+    {
+        "model": "destinymatrix.destinymatrixcontent",
+        "pk": 16,
+        "fields": {
+            "title": "Отношения (любовные)",
+            "elements": "d1-x1-x",
+            "value": "ВСЕ ВОЗМОЖНЫЕ ЗНАЧЕНИЯ",
+            "meaning": "Расшифровка ВСЕ ВОЗМОЖНЫЕ ЗНАЧЕНИЯ в контексте \"Отношения\".",
+            "advice": "",
+            "recommendation": ""
+        }
+    },
+    {
+        "model": "destinymatrix.destinymatrixcontent",
+        "pk": 17,
+        "fields": {
+            "title": "Отношения (сексуальность)",
+            "elements": "e-e1-e2",
+            "value": "ВСЕ ВОЗМОЖНЫЕ ЗНАЧЕНИЯ",
+            "meaning": "Расшифровка ВСЕ ВОЗМОЖНЫЕ ЗНАЧЕНИЯ в контексте \"Отношения\".",
+            "advice": "",
+            "recommendation": ""
+        }
+    },
+    {
+        "model": "destinymatrix.destinymatrixcontent",
+        "pk": 18,
+        "fields": {
+            "title": "Благополучие",
+            "elements": "c-c2-c1",
+            "value": "ВСЕ ВОЗМОЖНЫЕ ЗНАЧЕНИЯ",
+            "meaning": "Расшифровка ВСЕ ВОЗМОЖНЫЕ ЗНАЧЕНИЯ в контексте \"Благополучие\".",
+            "advice": "",
+            "recommendation": ""
+        }
+    },
+    {
+        "model": "destinymatrix.destinymatrixcontent",
+        "pk": 19,
+        "fields": {
+            "title": "Личное 20-40 лет",
+            "elements": "h",
+            "value": "ВСЕ ВОЗМОЖНЫЕ ЗНАЧЕНИЯ",
+            "meaning": "Расшифровка кода судьбы ВСЕ ВОЗМОЖНЫЕ ЗНАЧЕНИЯ в контексте \"Духовные задачи пичного предназначения на 20-40 лет\".",
+            "advice": "",
+            "recommendation": ""
+        }
+    },
+    {
+        "model": "destinymatrix.destinymatrixcontent",
+        "pk": 20,
+        "fields": {
+            "title": "Личное 20-40 лет",
+            "elements": "j",
+            "value": "ВСЕ ВОЗМОЖНЫЕ ЗНАЧЕНИЯ",
+            "meaning": "Расшифровка кода судьбы ВСЕ ВОЗМОЖНЫЕ ЗНАЧЕНИЯ в контексте \"Mатериальные задачи пичного предназначения на 20-40 лет\".",
+            "advice": "",
+            "recommendation": ""
+        }
+    },
+    {
+        "model": "destinymatrix.destinymatrixcontent",
+        "pk": 21,
+        "fields": {
+            "title": "Личное 20-40 лет",
+            "elements": "m",
+            "value": "ВСЕ ВОЗМОЖНЫЕ ЗНАЧЕНИЯ",
+            "meaning": "Расшифровка кода судьбы ВСЕ ВОЗМОЖНЫЕ ЗНАЧЕНИЯ в контексте \"Личное предназначение на 20-40 лет\".",
+            "advice": "",
+            "recommendation": ""
+        }
+    },
+    {
+        "model": "destinymatrix.destinymatrixcontent",
+        "pk": 22,
+        "fields": {
+            "title": "Социальное 40-60 лет",
+            "elements": "n",
+            "value": "ВСЕ ВОЗМОЖНЫЕ ЗНАЧЕНИЯ",
+            "meaning": "Расшифровка кода судьбы ВСЕ ВОЗМОЖНЫЕ ЗНАЧЕНИЯ в контексте \"Задачи, возникающие при взаимодействии с мужчинами, социального предназначения 40-60 лет\".",
+            "advice": "",
+            "recommendation": ""
+        }
+    },
+    {
+        "model": "destinymatrix.destinymatrixcontent",
+        "pk": 23,
+        "fields": {
+            "title": "Социальное 40-60 лет",
+            "elements": "t",
+            "value": "ВСЕ ВОЗМОЖНЫЕ ЗНАЧЕНИЯ",
+            "meaning": "Расшифровка кода судьбы ВСЕ ВОЗМОЖНЫЕ ЗНАЧЕНИЯ в контексте \"Задачи, возникающие при взаимодействии с женщинами, социального предназначения 40-60 лет\".",
+            "advice": "",
+            "recommendation": ""
+        }
+    },
+    {
+        "model": "destinymatrix.destinymatrixcontent",
+        "pk": 24,
+        "fields": {
+            "title": "Социальное 40-60 лет",
+            "elements": "z",
+            "value": "ВСЕ ВОЗМОЖНЫЕ ЗНАЧЕНИЯ",
+            "meaning": "Расшифровка кода судьбы ВСЕ ВОЗМОЖНЫЕ ЗНАЧЕНИЯ в контексте \"Социальное предназначение 40-60 лет\".",
+            "advice": "",
+            "recommendation": ""
+        }
+    },
+    {
+        "model": "destinymatrix.destinymatrixcontent",
+        "pk": 25,
+        "fields": {
+            "title": "Духовное предназначение",
+            "elements": "s",
+            "value": "ВСЕ ВОЗМОЖНЫЕ ЗНАЧЕНИЯ",
+            "meaning": "Расшифровка кода судьбы ВСЕ ВОЗМОЖНЫЕ ЗНАЧЕНИЯ в контексте \"Духовное предназначение\".",
+            "advice": "",
+            "recommendation": ""
+        }
+    }
+]

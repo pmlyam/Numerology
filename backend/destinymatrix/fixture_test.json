@@ -1,0 +1,266 @@
+[
+    {
+        "model": "destinymatrix.destinymatrixcontent",
+        "pk": 1,
+        "fields": {
+            "title": "Визитная карточка",
+            "elements": "a",
+            "value": "1",
+            "meaning": "Расшифровка кода судьбы ВСЕ ВОЗМОЖНЫЕ ЗНАЧЕНИЯ в контексте \"Визитная катрочка\".",
+            "advice": "",
+            "recommendation": ""
+        }
+    },
+    {
+        "model": "destinymatrix.destinymatrixcontent",
+        "pk": 2,
+        "fields": {
+            "title": "Визитная карточка",
+            "elements": "a",
+            "value": "2",
+            "meaning": "Расшифровка кода судьбы ВСЕ ВОЗМОЖНЫЕ ЗНАЧЕНИЯ в контексте \"Визитная катрочка\".",
+            "advice": "",
+            "recommendation": ""
+        }
+    },
+    {
+        "model": "destinymatrix.destinymatrixcontent",
+        "pk": 3,
+        "fields": {
+            "title": "Визитная карточка",
+            "elements": "a",
+            "value": "3",
+            "meaning": "Расшифровка кода судьбы ВСЕ ВОЗМОЖНЫЕ ЗНАЧЕНИЯ в контексте \"Визитная катрочка\".",
+            "advice": "",
+            "recommendation": ""
+        }
+    },
+    {
+        "model": "destinymatrix.destinymatrixcontent",
+        "pk": 4,
+        "fields": {
+            "title": "Визитная карточка",
+            "elements": "a",
+            "value": "4",
+            "meaning": "Расшифровка кода судьбы ВСЕ ВОЗМОЖНЫЕ ЗНАЧЕНИЯ в контексте \"Визитная катрочка\".",
+            "advice": "",
+            "recommendation": ""
+        }
+    },
+    {
+        "model": "destinymatrix.destinymatrixcontent",
+        "pk": 5,
+        "fields": {
+            "title": "Визитная карточка",
+            "elements": "a",
+            "value": "5",
+            "meaning": "Расшифровка кода судьбы ВСЕ ВОЗМОЖНЫЕ ЗНАЧЕНИЯ в контексте \"Визитная катрочка\".",
+            "advice": "",
+            "recommendation": ""
+        }
+    },
+    {
+        "model": "destinymatrix.destinymatrixcontent",
+        "pk": 6,
+        "fields": {
+            "title": "Визитная карточка",
+            "elements": "a",
+            "value": "6",
+            "meaning": "Расшифровка кода судьбы ВСЕ ВОЗМОЖНЫЕ ЗНАЧЕНИЯ в контексте \"Визитная катрочка\".",
+            "advice": "",
+            "recommendation": ""
+        }
+    },
+    {
+        "model": "destinymatrix.destinymatrixcontent",
+        "pk": 7,
+        "fields": {
+            "title": "Визитная карточка",
+            "elements": "a",
+            "value": "7",
+            "meaning": "Расшифровка кода судьбы ВСЕ ВОЗМОЖНЫЕ ЗНАЧЕНИЯ в контексте \"Визитная катрочка\".",
+            "advice": "",
+            "recommendation": ""
+        }
+    },
+    {
+        "model": "destinymatrix.destinymatrixcontent",
+        "pk": 8,
+        "fields": {
+            "title": "Визитная карточка",
+            "elements": "a",
+            "value": "8",
+            "meaning": "Расшифровка кода судьбы ВСЕ ВОЗМОЖНЫЕ ЗНАЧЕНИЯ в контексте \"Визитная катрочка\".",
+            "advice": "",
+            "recommendation": ""
+        }
+    },
+    {
+        "model": "destinymatrix.destinymatrixcontent",
+        "pk": 9,
+        "fields": {
+            "title": "Визитная карточка",
+            "elements": "a",
+            "value": "9",
+            "meaning": "Расшифровка кода судьбы ВСЕ ВОЗМОЖНЫЕ ЗНАЧЕНИЯ в контексте \"Визитная катрочка\".",
+            "advice": "",
+            "recommendation": ""
+        }
+    },
+    {
+        "model": "destinymatrix.destinymatrixcontent",
+        "pk": 10,
+        "fields": {
+            "title": "Визитная карточка",
+            "elements": "a",
+            "value": "10",
+            "meaning": "Расшифровка кода судьбы ВСЕ ВОЗМОЖНЫЕ ЗНАЧЕНИЯ в контексте \"Визитная катрочка\".",
+            "advice": "",
+            "recommendation": ""
+        }
+    },
+    {
+        "model": "destinymatrix.destinymatrixcontent",
+        "pk": 11,
+        "fields": {
+            "title": "Визитная карточка",
+            "elements": "a",
+            "value": "11",
+            "meaning": "Расшифровка кода судьбы ВСЕ ВОЗМОЖНЫЕ ЗНАЧЕНИЯ в контексте \"Визитная катрочка\".",
+            "advice": "",
+            "recommendation": ""
+        }
+    },
+    {
+        "model": "destinymatrix.destinymatrixcontent",
+        "pk": 12,
+        "fields": {
+            "title": "Визитная карточка",
+            "elements": "a",
+            "value": "12",
+            "meaning": "Расшифровка кода судьбы ВСЕ ВОЗМОЖНЫЕ ЗНАЧЕНИЯ в контексте \"Визитная катрочка\".",
+            "advice": "",
+            "recommendation": ""
+        }
+    },
+    {
+        "model": "destinymatrix.destinymatrixcontent",
+        "pk": 13,
+        "fields": {
+            "title": "Визитная карточка",
+            "elements": "a",
+            "value": "13",
+            "meaning": "Расшифровка кода судьбы ВСЕ ВОЗМОЖНЫЕ ЗНАЧЕНИЯ в контексте \"Визитная катрочка\".",
+            "advice": "",
+            "recommendation": ""
+        }
+    },
+    {
+        "model": "destinymatrix.destinymatrixcontent",
+        "pk": 14,
+        "fields": {
+            "title": "Визитная карточка",
+            "elements": "a",
+            "value": "14",
+            "meaning": "Расшифровка кода судьбы ВСЕ ВОЗМОЖНЫЕ ЗНАЧЕНИЯ в контексте \"Визитная катрочка\".",
+            "advice": "",
+            "recommendation": ""
+        }
+    },
+    {
+        "model": "destinymatrix.destinymatrixcontent",
+        "pk": 15,
+        "fields": {
+            "title": "Визитная карточка",
+            "elements": "a",
+            "value": "15",
+            "meaning": "Расшифровка кода судьбы ВСЕ ВОЗМОЖНЫЕ ЗНАЧЕНИЯ в контексте \"Визитная катрочка\".",
+            "advice": "",
+            "recommendation": ""
+        }
+    },
+    {
+        "model": "destinymatrix.destinymatrixcontent",
+        "pk": 16,
+        "fields": {
+            "title": "Визитная карточка",
+            "elements": "a",
+            "value": "16",
+            "meaning": "Расшифровка кода судьбы ВСЕ ВОЗМОЖНЫЕ ЗНАЧЕНИЯ в контексте \"Визитная катрочка\".",
+            "advice": "",
+            "recommendation": ""
+        }
+    },
+    {
+        "model": "destinymatrix.destinymatrixcontent",
+        "pk": 17,
+        "fields": {
+            "title": "Визитная карточка",
+            "elements": "a",
+            "value": "17",
+            "meaning": "Расшифровка кода судьбы ВСЕ ВОЗМОЖНЫЕ ЗНАЧЕНИЯ в контексте \"Визитная катрочка\".",
+            "advice": "",
+            "recommendation": ""
+        }
+    },
+    {
+        "model": "destinymatrix.destinymatrixcontent",
+        "pk": 18,
+        "fields": {
+            "title": "Визитная карточка",
+            "elements": "a",
+            "value": "18",
+            "meaning": "Расшифровка кода судьбы ВСЕ ВОЗМОЖНЫЕ ЗНАЧЕНИЯ в контексте \"Визитная катрочка\".",
+            "advice": "",
+            "recommendation": ""
+        }
+    },
+    {
+        "model": "destinymatrix.destinymatrixcontent",
+        "pk": 19,
+        "fields": {
+            "title": "Визитная карточка",
+            "elements": "a",
+            "value": "19",
+            "meaning": "Расшифровка кода судьбы ВСЕ ВОЗМОЖНЫЕ ЗНАЧЕНИЯ в контексте \"Визитная катрочка\".",
+            "advice": "",
+            "recommendation": ""
+        }
+    },
+    {
+        "model": "destinymatrix.destinymatrixcontent",
+        "pk": 20,
+        "fields": {
+            "title": "Визитная карточка",
+            "elements": "a",
+            "value": "20",
+            "meaning": "Расшифровка кода судьбы ВСЕ ВОЗМОЖНЫЕ ЗНАЧЕНИЯ в контексте \"Визитная катрочка\".",
+            "advice": "",
+            "recommendation": ""
+        }
+    },
+    {
+        "model": "destinymatrix.destinymatrixcontent",
+        "pk": 21,
+        "fields": {
+            "title": "Визитная карточка",
+            "elements": "a",
+            "value": "21",
+            "meaning": "Расшифровка кода судьбы ВСЕ ВОЗМОЖНЫЕ ЗНАЧЕНИЯ в контексте \"Визитная катрочка\".",
+            "advice": "",
+            "recommendation": ""
+        }
+    },
+    {
+        "model": "destinymatrix.destinymatrixcontent",
+        "pk": 22,
+        "fields": {
+            "title": "Визитная карточка",
+            "elements": "a",
+            "value": "22",
+            "meaning": "Расшифровка кода судьбы ВСЕ ВОЗМОЖНЫЕ ЗНАЧЕНИЯ в контексте \"Визитная катрочка\".",
+            "advice": "",
+            "recommendation": ""
+        }
+    }
+]

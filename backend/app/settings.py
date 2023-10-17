@@ -23,8 +23,9 @@ INSTALLED_APPS = [
     'django.contrib.messages',
     'django.contrib.staticfiles',
     'rest_framework',
-    'psychomatrix.apps.PsychomatrixConfig',
     'corsheaders',
+    'psychomatrix.apps.PsychomatrixConfig',
+    'destinymatrix.apps.DestinymatrixConfig',
 
 ]
 
@@ -83,7 +84,7 @@ WSGI_APPLICATION = 'app.wsgi.application'
 DATABASES = {
     'default': {
         'ENGINE': os.getenv('DB_ENGINE', default='django.db.backends.postgresql'),
-        'NAME': os.getenv('POSTGRES_DB', default=os.path.join(BASE_DIR, 'postgres')),
+        'NAME': os.getenv('POSTGRES_DB', default=os.path.join('local_numerology', 'postgres')),
         'USER': os.getenv('POSTGRES_USER', default='postgres'),
         'PASSWORD': os.getenv('POSTGRES_PASSWORD', default='postgres'),
         'HOST': os.getenv('DB_HOST', default='db'),
