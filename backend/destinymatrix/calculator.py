@@ -7,9 +7,12 @@ class DestinyMatrix:
 
     class Points:
         __slots__ = (
-            'a', 'b', 'c', 'd', 'e', 'f', 'g', 'y', 'k', 'a1', 'a2', 'd1', 'd2',
-            'h', 'j', 'm', 'n', 't', 'z', 's', 'c1', 'x', 'x2', 'x1', 'c2', 'e1',
-            'e2', 'p1', 'p2', 's1', 's2', 'l', 'b1', 'b2', 'b3', 'l1', 'l2', 'l3',
+            'a', 'b', 'c', 'd', 'e', 'f', 'g',
+            'y', 'k', 'a1', 'a2', 'd1', 'd2',
+            'h', 'j', 'm', 'n', 't', 'z', 's',
+            'c1', 'x', 'x2', 'x1', 'c2', 'e1',
+            'e2', 'p1', 'p2', 's1', 's2', 'll',
+            'b1', 'b2', 'b3', 'l1', 'l2', 'l3',
             'l4', 'l5', 'l6', 'a3'
         )
 
@@ -18,7 +21,6 @@ class DestinyMatrix:
                 setattr(self, slot, 0)
 
         def __setattr__(self, key, value):
-            # TODO: Насколько это все круто, если это малочитаемо?? (можно было просто сумму оставить)
             if isinstance(value, tuple):
                 point = sum(value)
             else:
@@ -31,7 +33,9 @@ class DestinyMatrix:
             return {slot: getattr(self, slot) for slot in self.__slots__}
 
         def __str__(self):
-            return '\n'.join([f'{key}: {value}' for key, value in self.to_dict().items()])
+            return '\n'.join(
+                [f'{key}: {value}' for key, value in self.to_dict().items()]
+            )
 
     def __init__(self, date: datetime):
         self.date = date
@@ -99,7 +103,8 @@ class DestinyMatrix:
         points e1, e2, p1, p2, s1, s2
         """
         # TODO: add s3, s4, o calculations
-        self.points.e1 = (self.points.f, self.points.g, self.points.y, self.points.k)
+        self.points.e1 = (self.points.f, self.points.g,
+                          self.points.y, self.points.k)
         self.points.e2 = (self.points.e, self.points.e1)
         self.points.p1 = (self.points.g, self.points.e1)
         self.points.p2 = (self.points.g, self.points.p1)
@@ -108,9 +113,9 @@ class DestinyMatrix:
 
     def __add_points_seventh_group(self):
         """
-        points l, b1, b2, b3, l1, l2, l3, l4, l5, l6, a3
+        points ll, b1, b2, b3, l1, l2, l3, l4, l5, l6, a3
         """
-        self.points.l = (self.points.a, self.points.b)
+        self.points.ll = (self.points.a, self.points.b)
         self.points.b1 = (self.points.b, self.points.e)
         self.points.b2 = (self.points.b, self.points.b1)
         self.points.b3 = (self.points.b1, self.points.e)
@@ -139,8 +144,13 @@ class DestinyMatrix:
             'Жизненный путь, главная проработка души': [f'{self.points.c}', ],
             'Карма прошлого воплощения': [f'{self.points.d}', ],
             'Зона комфорта': [f'{self.points.e}', ],
-            # 'Родовые программы': [f'{self.points.f}-{self.points.s2}-{self.points.s1}',
-            #                       f'{self.points.g}-{self.points.p2}-{self.points.p1}', ]
+            # 'Родовые программы': [f'{self.points.f}-'
+            #                       f'{self.points.s2}-'
+            #                       f'{self.points.s1}',
+            #                       f'{self.points.g}-'
+            #                       f'{self.points.p2}-'
+            #                       f'{self.points.p1}',
+            #                       ]
         }
 
 

@@ -5,7 +5,6 @@ from rest_framework.views import APIView
 
 from destinymatrix.serializers import (DateSerializer,
                                        DestinyMatrixSerializer)
-from destinymatrix.models import DestinyMatrixContent
 from .calculator import DestinyMatrix, get_contents
 
 

@@ -21,7 +21,8 @@ class DestinyMatrixContent(models.Model):
     meaning - расшифровка матрицы в контексте раздела
     advice - совет, как относиться к получившимся расчетам
     recommendation - совет, как работать над собой в этой сфере жизни
-    matrix_elements - элементы матрицы, которые относятся к текущему разделу, и их значения
+    matrix_elements - элементы матрицы, которые относятся к текущему разделу,
+    и их значения
     """
     title = models.CharField(
         max_length=55,
