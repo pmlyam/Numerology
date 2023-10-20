@@ -86,6 +86,6 @@ jobs:
             echo POSTGRES_USER=${{ secrets.POSTGRES_USER }} >> .env
             echo POSTGRES_INITDB_ARGS=${{ secrets.POSTGRES_INITDB_ARGS }} >> .env
             # остановка всех контейнеров
-            sudo docker compose up --force-recreate -d
+            sudo docker compose up --force-recreate --build -d
             sudo docker compose exec web python manage.py migrate
             sudo docker compose exec web python manage.py collectstatic --no-input
