@@ -13,7 +13,7 @@ class DestinyMatrix:
             'c1', 'x', 'x2', 'x1', 'c2', 'e1',
             'e2', 'p1', 'p2', 's1', 's2', 'll',
             'b1', 'b2', 'b3', 'l1', 'l2', 'l3',
-            'l4', 'l5', 'l6', 'a3'
+            'l4', 'l5', 'l6', 'a3', 'o', 'u'
         )
 
         def __init__(self):
@@ -66,6 +66,8 @@ class DestinyMatrix:
         self.points.g = (self.points.b, self.points.c)
         self.points.y = (self.points.c, self.points.d)
         self.points.k = (self.points.a, self.points.d)
+        self.points.o = (self.points.f, self.points.y)
+        self.points.u = (self.points.g, self.points.k)
 
     def __add_points_third_group(self):
         """
@@ -144,6 +146,11 @@ class DestinyMatrix:
             'Жизненный путь, главная проработка души': [f'{self.points.c}', ],
             'Карма прошлого воплощения': [f'{self.points.d}', ],
             'Зона комфорта': [f'{self.points.e}', ],
+            'Родовые программы по мужской линии': [f'{self.points.o}', ],
+            'Родовые программы по женской линии': [f'{self.points.o}', ],
+            'Карма прошлых жизней': [f'{self.points.d1}-'
+                                     f'{self.points.d2}-'
+                                     f'{self.points.d}', ],
             # 'Родовые программы': [f'{self.points.f}-'
             #                       f'{self.points.s2}-'
             #                       f'{self.points.s1}',
